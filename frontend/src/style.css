@@ -1,0 +1,178 @@
+/* =========================================
+   GENERAL STYLES
+   ========================================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+.app-header {
+  background-color: #1a3d7c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #dfe6f1;
+}
+
+.main-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   SEARCH BOX
+   ========================================= */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #1a3d7c;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #163366;
+}
+
+/* =========================================
+   NEW FAQ ACCORDION SECTION
+   ========================================= */
+.faq-wrapper {
+  background-color: #1a3d7c;
+  color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin-top: 60px;
+  text-align: left; /* Ensures text aligns left inside the dark box */
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pre-heading {
+  color: #f7ca18;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.faq-header h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #f7ca18;
+}
+
+/* Accordion Layout */
+.accordion {
+  border-top: 1px solid #2a2a2a;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.accordion-btn {
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 24px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.accordion-btn:hover {
+  color: #f7ca18;
+}
+
+.accordion-btn .icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+/* Toggled States */
+.accordion-btn.active {
+  color: #f7ca18;
+}
+
+.accordion-btn.active .icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.accordion-content p {
+  color: #aaaaaa;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Optional: Auto-fill button styling inside the answer */
+.auto-fill-btn {
+  background: transparent;
+  color: #f7ca18;
+  border: 1px solid #f7ca18;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.auto-fill-btn:hover {
+  background: #f7ca18;
+  color: #000;
+}
