@@ -13,7 +13,7 @@ export default function Header({ activeTab, onTabChange }: Props) {
         <div className={styles.brand}>
           <span className={styles.flag}>🇳🇵</span>
           <div>
-            <h1 className={styles.title}>Nepal Manifesto AI</h1>
+            <h1 className={styles.title}>Nepal Manifesto </h1>
             <p className={styles.subtitle}>Compare party promises. Make informed choices.</p>
           </div>
         </div>
